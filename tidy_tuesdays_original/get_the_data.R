@@ -13,15 +13,10 @@ tuesdata <- tidytuesdayR::tt_load(2023, week = 5)
 cats_uk <- tuesdata$cats_uk
 cats_uk_reference <- tuesdata$cats_uk_reference
 
-# Or read in the data manually
-
-cats_uk <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-31/cats_uk.csv")
-cats_uk_reference <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-31/cats_uk_reference.csv")
-
-# Write to disk
-readr::write_csv(cats_uk, "./tidy_tuesdays_original/cats_uk.csv")
-readr::write_csv(cats_uk_reference, "./tidy_tuesdays_original/cats_uk_reference.csv")
-
-# read and write markdown with data dictionary to disk
-markdown <- readr::read_file("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-31/readme.md")
-readr::write_file(markdown, "./tidy_tuesdays_original/readme.md")
+# Or read in the data via url and write to disk with pipe
+readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-31/cats_uk.csv") |>
+    readr::write_csv("./tidy_tuesdays_original/cats_uk.csv")
+readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-31/cats_uk_reference.csv") |>
+    readr::write_csv("./tidy_tuesdays_original/cats_uk_reference.csv")
+readr::read_file("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-31/readme.md") |>
+    readr::write_file("./tidy_tuesdays_original/readme.md")
