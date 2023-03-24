@@ -7,11 +7,11 @@ import pandas as pd
 cats_uk = pd.read_csv(
     "tidy_tuesdays_original/cats_uk.csv",
     index_col="tag_id",
+    parse_dates=["timestamp"],
     dtype={
         "tag_id": str,
         "event_id": str,
         "visible": bool,
-        "timestamp": str,
         "location_long": float,
         "location_lat": float,
         "ground_speed": int,
