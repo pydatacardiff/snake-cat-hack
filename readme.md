@@ -10,14 +10,14 @@ The [R For Data Science](https://github.com/rfordatascience/tidytuesday) communi
 
 ### How do I get started?
 
-(step 0 is to make sure you have a github account and install git on your machine)
+(step 0 is to make sure you have a github account and install[git](https://github.com/git-guides) on your machine)
 
-1. Fork this repository
-1. Clone your forked repository to your local machine
-1. Avoid modifying the `tidy_tuesdays_original` folder
+1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository
+1. [Clone](https://github.com/git-guides/git-clone#git-clone) your forked repository to your local machine
+1. Avoid modifying the `tidy_tuesdays_original` folder directly.
 1. Make a folder with your github user name in the pydata_cardiff folder
     * You could even pair up with someone else and make a folder with both your user names
-1. Add your code to the folder you created
+1. [Add](https://github.com/git-guides/git-add) your code to the folder you created
 
 ### What do I make?
 
@@ -49,13 +49,13 @@ The [R For Data Science](https://github.com/rfordatascience/tidytuesday) communi
 
 ### What do I do when I am done?
 
-1. Commit your changes to your local repository
-1. Push your changes to your forked repository
-1. Create a pull request to merge your changes into this repository
+1. [Commit](https://github.com/git-guides/git-commit#git-commit) your changes to your local repository.
+1. [Push](https://github.com/git-guides/git-push) your changes to your forked repository.
+1. Create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to merge your changes into this repository.
 1. Use your new knowledge for the good of cats everywhere
 
 ### What if I have questions?
 
-1. Ask someone near you
+1. Ask someone near you, they're probably really nice.
 1. Google it, reading the docs isn't cheating!
-1. Ask one of the organisers
+1. Ask one of the organisers.
