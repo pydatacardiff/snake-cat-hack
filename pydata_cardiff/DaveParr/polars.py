@@ -109,6 +109,10 @@ def lag(name: str, n: int) -> pl.Expr:
 
 lag_timestamp = lag("timestamp", 1).alias("interval")
 
+# This code takes the cats_uk_reference_with_cats dataset and groups it by tag_id.
+# It then finds the lag of the timestamp for each tag_id.
+# It then returns the tag_id and the lag of the timestamp.
+
 interval_per_event = (
     cats_uk_reference_with_cats.select("tag_id", "timestamp")
     .sort("timestamp")
@@ -117,7 +121,8 @@ interval_per_event = (
         lag_timestamp,
     )
     .explode("interval")
+    .with_columns(pl.col("interval").cast(pl.Utf8).alias("interval_string"))
 )
 
 # plot duration as histogram
-px.histogram(x=interval_per_event.select("interval").to_series()).show()
+px.histogram(x=interval_per_event.select("interval").to_series(), nbins=20).show()
