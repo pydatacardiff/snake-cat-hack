@@ -52,6 +52,7 @@ The [R For Data Science](https://github.com/rfordatascience/tidytuesday) communi
 1. [Commit](https://github.com/git-guides/git-commit#git-commit) your changes to your local repository.
 1. [Push](https://github.com/git-guides/git-push) your changes to your forked repository.
 1. Create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to merge your changes into this repository.
+1. Tag @DaveParr for review
 1. Use your new knowledge for the good of cats everywhere
 
 ### What if I have questions?
